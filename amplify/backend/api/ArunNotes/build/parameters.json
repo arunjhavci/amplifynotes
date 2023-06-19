@@ -1,0 +1,14 @@
+{
+    "AppSyncApiName": "ArunNotes",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authArunNotes",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "AuthModeLastUpdated": "2023-06-15T13:27:19.785Z",
+    "S3DeploymentBucket": "amplify-arunnotes-staging-64359-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/b388ff72f51dedab2d9761d695bead6ff7e1ba3a"
+}
